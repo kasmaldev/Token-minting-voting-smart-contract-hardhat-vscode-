@@ -84,7 +84,7 @@ node_modules\.bin\ts-node --files .\scripts\delegate.ts 0x7E5D51Db01Bcdc9D4bcec8
 
 •	Delegate transaction execution Address: 0xe328a3D1bC7C20AA851Bc85897262bD37364a7D4 Votes: 0.0
 
-**Cast
+**Cast**
 
 Script: delegate.ts {custom_ballot_address} {token_address} {proposal_index}
 
