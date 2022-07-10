@@ -1,6 +1,6 @@
 
 
-Weekend project 2 - Group 15
+**Weekend project 2 - Group 15**
 
 •	Form groups of 3 to 5 students
 
@@ -27,8 +27,8 @@ Getting Started
 
 Before everything, clone the project:
 
-git clone https://github.com/Encode-Club-Solidity-Group-14/project_week_02.git
-
+**git clone https://github.com/Encode-Club-Solidity-Group-14/project_week_02.git
+**
 Building
 
 yarn install
@@ -41,11 +41,11 @@ yarn hardhat test
 
 Coverage check
 
-npx hardhat coverage
+npx hardhat coverage**
 
 Scritps Usage
 
-Deploy Everything
+**Deploy Everything**
 
 Script: deploy.ts {list_of_proposals}
 
@@ -58,7 +58,7 @@ Result:
 
 •	Custom Ballot Contract deployed at 0x1cCF8f6DF5A56Cd78ECFD3d083788597F52FcBbF
 
-Query Proposals
+**Query Proposals**
 
 Script: query_proposal.ts {custom_ballot_address} {proposal_index_to_query}
 
@@ -67,7 +67,7 @@ yarn ts-node --files .\scripts\query_proposal.ts 0x1cCF8f6DF5A56Cd78ECFD3d083788
  
 
 
-Mint
+**Mint**
 Script: mint.ts {token_address} {address_to_receive_minted_tokens} {amount_to_mint}
 yarn ts-node --files .\scripts\mint.ts  0x7E5D51Db01Bcdc9D4bcec84Deb661B463C9d2D71 0x56D21d44F1C4c1ae0a5FF5d589CC344292A1E9c2 15
 
@@ -76,7 +76,7 @@ yarn ts-node --files .\scripts\mint.ts  0x7E5D51Db01Bcdc9D4bcec84Deb661B463C9d2D
 •	Minted transaction execution 0x7E5D51Db01Bcdc9D4bcec84Deb661B463C9d2D71
  
 
-Delegate
+**Delegate**
 
 Script: delegate.ts {token_address} {address_to_delegate}
 node_modules\.bin\ts-node --files .\scripts\delegate.ts 0x7E5D51Db01Bcdc9D4bcec84Deb661B463C9d2D71 0xe328a3D1bC7C20AA851Bc85897262bD37364a7D4
@@ -84,15 +84,15 @@ node_modules\.bin\ts-node --files .\scripts\delegate.ts 0x7E5D51Db01Bcdc9D4bcec8
 
 •	Delegate transaction execution Address: 0xe328a3D1bC7C20AA851Bc85897262bD37364a7D4 Votes: 0.0
 
-Cast
-
+**Cast
+**
 Script: delegate.ts {custom_ballot_address} {token_address} {proposal_index}
 
 ts-node --files .\scripts\cast.ts 0x1cCF8f6DF5A56Cd78ECFD3d083788597F52FcBbF 0x7E5D51Db01Bcdc9D4bcec84Deb661B463C9d2D71  0
 
  
 •	Cast transaction execution Hash: 0x1b1bb6d474a6c799d35f26a1a67e6c5e8a32ca6bd1dfbf7c1d90e47e6fb60fdb
-Query results
+**Query results**
 
 Script: delegate.ts {custom_ballot_address}
 
@@ -107,7 +107,7 @@ Winning proposal is: Proposal_1
 Done in 8.52s.  
 
 
-Create Ballot from Snapshots
+**Create Ballot from Snapshots**
 
 Script: create_ballot_from_snapshot.ts {token_address} {list_of_proposals}
 
