@@ -55,11 +55,13 @@ yarn ts-node --files .\scripts\deploy.ts Proposal_1 Proposal_2 Proposal_3
 
 Result:
 •	Token Contract deployed at 0x7E5D51Db01Bcdc9D4bcec84Deb661B463C9d2D71
+
 •	Custom Ballot Contract deployed at 0x1cCF8f6DF5A56Cd78ECFD3d083788597F52FcBbF
 
 Query Proposals
 
 Script: query_proposal.ts {custom_ballot_address} {proposal_index_to_query}
+
 yarn ts-node --files .\scripts\query_proposal.ts 0x1cCF8f6DF5A56Cd78ECFD3d083788597F52FcBbF 0
 
  
@@ -75,19 +77,25 @@ yarn ts-node --files .\scripts\mint.ts  0x7E5D51Db01Bcdc9D4bcec84Deb661B463C9d2D
  
 
 Delegate
+
 Script: delegate.ts {token_address} {address_to_delegate}
 node_modules\.bin\ts-node --files .\scripts\delegate.ts 0x7E5D51Db01Bcdc9D4bcec84Deb661B463C9d2D71 0xe328a3D1bC7C20AA851Bc85897262bD37364a7D4
  
 
 •	Delegate transaction execution Address: 0xe328a3D1bC7C20AA851Bc85897262bD37364a7D4 Votes: 0.0
+
 Cast
+
 Script: delegate.ts {custom_ballot_address} {token_address} {proposal_index}
+
 ts-node --files .\scripts\cast.ts 0x1cCF8f6DF5A56Cd78ECFD3d083788597F52FcBbF 0x7E5D51Db01Bcdc9D4bcec84Deb661B463C9d2D71  0
 
  
 •	Cast transaction execution Hash: 0x1b1bb6d474a6c799d35f26a1a67e6c5e8a32ca6bd1dfbf7c1d90e47e6fb60fdb
 Query results
+
 Script: delegate.ts {custom_ballot_address}
+
 yarn ts-node --files .\scripts\query_results.ts 0x1cCF8f6DF5A56Cd78ECFD3d083788597F52FcBbF
 
  
@@ -97,8 +105,12 @@ Wallet balance 54.96486693739313
 Attaching custom ballot contract interface to address 0x1cCF8f6DF5A56Cd78ECFD3d083788597F52FcBbF
 Winning proposal is: Proposal_1
 Done in 8.52s.  
+
+
 Create Ballot from Snapshots
+
 Script: create_ballot_from_snapshot.ts {token_address} {list_of_proposals}
+
 yarn ts-node --files .\scripts\create_ballot_from_snapshot.ts 0x7E5D51Db01Bcdc9D4bcec84Deb661B463C9d2D71  New_Proposal_1 New_Proposal_2 New_Proposal_3
 
 
