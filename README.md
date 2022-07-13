@@ -27,8 +27,7 @@ Getting Started
 
 Before everything, clone the project:
 
-**git clone https://github.com/Encode-Club-Solidity-Group-14/project_week_02.git
-**
+
 Building
 
 yarn install
